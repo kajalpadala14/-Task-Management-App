@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="app">
+        <h1 class="protest-revolution-regular">To-Do List Application</h1>
+        <input type="text" id="taskInput" placeholder="Add a new task">
+        <input type="datetime-local" id="taskDate">
+        <input type="datetime-local" id="taskDue">
+        <input list="priority-options" id="task-priority" placeholder="Select Task Priority">
+        <datalist id="priority-options">
+            <option value="Low">
+            <option value="Medium">
+            <option value="High">
+            <option value="Critical">
+        </datalist>
+        
+            <button id="save" style="display:none">Save</button>
+            <button id="addTaskButton">Add Task</button>
+            <button id="resetButton">Reset All</button>
+        
+
+        <table id="taskTable">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Date</th>
+                    <th>Due</th>
+                    <th>
+                        Filter
+                        <input list="filter-options" id="filter" placeholder="Filter Tasks">
+                        <datalist id="filter-options">
+                            <option value="All Tasks">
+                            <option value="Date Due 7 Days">
+                            <option value="High">
+                            <option value="Medium">
+                            <option value="Critical">
+                            <option value="Low">
+                            <option value="Pending">
+                            <option value="Completed">
+                        </datalist>
+                    </th>
+                    <th>Actions</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
